@@ -7,7 +7,7 @@ filetype off
 execute pathogen#infect()
 
 if has("win32")
-    set rtp+=$VIMRUNTIME/vimfiles/bundle/vundle/
+    set rtp+=$VIM\vimfiles\bundle\vundle\
 else
     set rtp+=~/.vim/bundle/vundle/
 endif
@@ -20,6 +20,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+
+Bundle 'cschlueter/vim-campfire'
 
 if !has("win32")
     Bundle 'Valloric/YouCompleteMe'
@@ -45,11 +47,14 @@ if has("win32")
     set directory=D:\Data\Vim
 endif
 
+set number
 if has("gui_running")
     set lines=50 columns=120
 endif
 
 syntax on
+colorscheme campfire
+
 set incsearch
 set hlsearch
 
@@ -95,4 +100,7 @@ set showmatch
 "set iskeyword=@,48-57,_,192-255
 
 set wildmenu
+
+autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd bufwritepost _vimrc source $MYVIMRC
 
