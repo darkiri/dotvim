@@ -12,6 +12,6 @@ Installation Windows:
     
     cd "C:\Program Files (x86)\Vim"
     del _vimrc
-    del vimfiles
+    rmdir /S vimfiles
     mklink "_vimrc" D:\Data\.vim\.vimrc
     mklink /D vimfiles D:\Data\.vim
