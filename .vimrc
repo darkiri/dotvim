@@ -20,6 +20,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'Gundo'
 
 Bundle 'cschlueter/vim-campfire'
 
@@ -100,6 +101,15 @@ set showmatch
 "set iskeyword=@,48-57,_,192-255
 
 set wildmenu
+
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
+nnoremap <F5> :GundoToggle<CR>
 
 autocmd bufwritepost .vimrc source $MYVIMRC
 autocmd bufwritepost _vimrc source $MYVIMRC
