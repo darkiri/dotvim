@@ -21,6 +21,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'Gundo'
+Bundle 'plasticboy/vim-markdown'
 
 Bundle 'cschlueter/vim-campfire'
 
