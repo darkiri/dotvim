@@ -40,6 +40,8 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:syntastic_cpp_checkers=['oclint', 'cpplint']
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 "set rtp-=~/.vim/bundle/YouCompleteMe
 
@@ -52,8 +54,7 @@ if has("win32")
     
     set guifont=Lucida_Sans_Typewriter:h10
 else
-	set t_AB=[48;5;%dm
-	set t_AF=[38;5;%dm
+    set guifont=Liberation\ Mono\ 11
 endif
 
 if has("gui_running")
@@ -62,7 +63,8 @@ endif
 
 syntax on
 if !has("win32") || has("gui_running")
-    colorscheme base16-chalk
+    set background=dark
+    colorscheme jellybeans
 endif
 
 
