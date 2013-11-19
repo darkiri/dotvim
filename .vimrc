@@ -1,5 +1,4 @@
 set nocompatible
-
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 filetype off
@@ -47,6 +46,11 @@ if has("win32")
 
     set backupdir=D:\Data\Vim\Backups
     set directory=D:\Data\Vim
+    
+    set guifont=Lucida_Sans_Typewriter:h10
+else
+	set t_AB=[48;5;%dm
+	set t_AF=[38;5;%dm
 endif
 
 set number
@@ -63,11 +67,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
-set smartindent
+"set smartindent
 set autoindent
-
-"set encoding=utf8
-set guifont=Lucida_Console:h10:cEASTEUROPE
 
 set ruler
 set showcmd
