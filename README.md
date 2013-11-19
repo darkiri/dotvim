@@ -2,9 +2,7 @@ Installation Linux:
 
     git clone http://github.com/darkiri/dotvim.git ~/.vim
 
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
-
+    ln -s ~/.vim/.vimrc ~/.vimrc
 
 Installation Windows:
 
