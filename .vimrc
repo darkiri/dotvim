@@ -22,6 +22,9 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'Gundo'
 Bundle 'plasticboy/vim-markdown'
 
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/base16-vim'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'cschlueter/vim-campfire'
 
 if !has("win32")
@@ -53,14 +56,17 @@ else
 	set t_AF=[38;5;%dm
 endif
 
-set number
 if has("gui_running")
     set lines=50 columns=120
 endif
 
 syntax on
-colorscheme campfire
+if !has("win32") || has("gui_running")
+    colorscheme base16-chalk
+endif
 
+
+set number
 set incsearch
 set hlsearch
 
