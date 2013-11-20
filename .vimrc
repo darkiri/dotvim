@@ -21,6 +21,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'Gundo'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'nelstrom/vim-visual-star-search'
 
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/base16-vim'
