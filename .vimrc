@@ -111,6 +111,7 @@ set statusline=%<%f%h%m%r\ %{&encoding}\ %l/%L,%c\ %{SyntasticStatuslineFlag()}
 set laststatus=2
 
 set showmatch
+set history=200
 
 "set iskeyword=@,48-57,_,192-255
 
