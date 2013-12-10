@@ -72,8 +72,11 @@ if !has("win32") || has("gui_running")
     colorscheme jellybeans
 endif
 
-
 set number
+
+set list
+set listchars=tab:▸\ ,eol:¬
+
 set incsearch
 set hlsearch
 
