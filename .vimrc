@@ -130,6 +130,9 @@ vmap <C-Down> ]egv
 
 nnoremap <F5> :GundoToggle<CR>
 
+autocmd BufReadPre SConstruct set filetype=python
+autocmd BufReadPre SConscript set filetype=python
+
 autocmd bufwritepost .vimrc source $MYVIMRC
 autocmd bufwritepost _vimrc source $MYVIMRC
 
