@@ -24,6 +24,7 @@ Bundle 'Gundo'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'PProvost/vim-ps1'
+Bundle 'vim-scripts/Scons-compiler-plugin'
 
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/base16-vim'
