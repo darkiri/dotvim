@@ -111,6 +111,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 autocmd FileType make setlocal noexpandtab
+autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 tabstop=2 
 
 set statusline=%<%f%h%m%r\ %{&encoding}\ %l/%L,%c\ %{SyntasticStatuslineFlag()}
 set laststatus=2
