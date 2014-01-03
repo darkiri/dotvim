@@ -57,7 +57,7 @@ if has("win32")
 
     set backupdir=D:\Data\Vim\Backups
     set directory=D:\Data\Vim
-    
+
     set guifont=Lucida_Sans_Typewriter:h10
 else
     set guifont=Liberation\ Mono\ 11
@@ -120,7 +120,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 autocmd FileType make setlocal noexpandtab
-autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 tabstop=2 
+autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
 set statusline=%<%f%h%m%r\ %{&encoding}\ %l/%L,%c\ %{SyntasticStatuslineFlag()}
 set laststatus=2
