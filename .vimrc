@@ -1,4 +1,4 @@
-set nocompatible
+﻿set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 filetype off
@@ -61,6 +61,15 @@ if has("win32")
     set guifont=Lucida_Sans_Typewriter:h10
 else
     set guifont=Liberation\ Mono\ 11
+endif
+
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  set fileencodings=ucs-bom,utf-8,latin1
 endif
 
 if has("gui_running")
