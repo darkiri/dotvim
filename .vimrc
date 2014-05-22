@@ -45,12 +45,15 @@ let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
 let g:syntastic_cpp_checkers=['oclint', 'cpplint', 'gcc']
 "let g:syntastic_debug=1
+let g:ycm_collect_identifiers_from_tags_files = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
 "set rtp-=~/.vim/bundle/YouCompleteMe
+
+set tags=./tags,tags;$HOME
 
 if has("win32")
     source $VIMRUNTIME/mswin.vim
@@ -141,6 +144,7 @@ vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
 nnoremap <F5> :GundoToggle<CR>
+nnoremap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 autocmd BufReadPre SConstruct set filetype=python
 autocmd BufReadPre SConscript set filetype=python
