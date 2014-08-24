@@ -77,7 +77,7 @@ if has("multi_byte")
 endif
 
 if has("gui_running")
-    set lines=50 columns=120
+    set lines=55 columns=180
 endif
 
 syntax on
