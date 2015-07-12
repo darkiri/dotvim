@@ -11,30 +11,32 @@ else
     set rtp+=~/.vim/bundle/vundle/
 endif
 
-call vundle#rc()
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-abolish'
-Bundle 'Gundo'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'nelstrom/vim-visual-star-search'
-Bundle 'PProvost/vim-ps1'
-Bundle 'vim-scripts/Scons-compiler-plugin'
-Bundle 'Valloric/ListToggle'
+Plugin 'gmarik/vundle'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-abolish'
+Plugin 'Gundo'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'PProvost/vim-ps1'
+Plugin 'vim-scripts/Scons-compiler-plugin'
+Plugin 'Valloric/ListToggle'
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'chriskempson/base16-vim'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'cschlueter/vim-campfire'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'cschlueter/vim-campfire'
 
 if !has("win32")
-    Bundle 'Valloric/YouCompleteMe'
+    Plugin 'Valloric/YouCompleteMe'
 endif
+
+call vundle#end()
 
 filetype plugin indent on
 
