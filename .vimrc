@@ -66,6 +66,8 @@ if has("win32")
 
     set guifont=Lucida_Sans_Typewriter:h10
 else
+    set backupdir=./.backup,/tmp
+    set directory=./.backup,/tmp
     set guifont=Liberation\ Mono\ 11
 endif
 
@@ -150,6 +152,8 @@ nnoremap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 autocmd BufReadPre SConstruct set filetype=python
 autocmd BufReadPre SConscript set filetype=python
+
+autocmd BufWritePre *.{h,cpp} :%s/\s\+$//e
 
 autocmd bufwritepost .vimrc source $MYVIMRC
 autocmd bufwritepost _vimrc source $MYVIMRC
