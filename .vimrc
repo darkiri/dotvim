@@ -14,7 +14,7 @@ endif
 call vundle#begin()
 
 Plugin 'gmarik/vundle'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -27,10 +27,9 @@ Plugin 'PProvost/vim-ps1'
 Plugin 'vim-scripts/Scons-compiler-plugin'
 Plugin 'Valloric/ListToggle'
 
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
 Plugin 'nanotech/jellybeans.vim'
-Plugin 'cschlueter/vim-campfire'
+Plugin 'w0ng/vim-hybrid'
 
 if !has("win32")
     Plugin 'Valloric/YouCompleteMe'
@@ -49,6 +48,9 @@ let g:syntastic_cpp_checkers=['oclint', 'cpplint', 'gcc']
 "let g:syntastic_debug=1
 let g:ycm_collect_identifiers_from_tags_files = 1
 
+if !has("gui_running")
+  let g:airline_powerline_fonts = 1
+endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -87,7 +89,7 @@ endif
 syntax on
 if !has("win32") || has("gui_running")
     set background=dark
-    colorscheme jellybeans
+    colorscheme hybrid
 endif
 
 set number
@@ -146,6 +148,14 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+" unimpared for de keyboard
+nmap < [
+nmap > ]
+omap < [
+omap > ]
+xmap < [
+xmap > ]
 
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
