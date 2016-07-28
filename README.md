@@ -5,6 +5,8 @@ Installation Linux:
     cd .vim
     git submodule init
     git submodule update
+    
+[Install powerline Fonts](https://powerline.readthedocs.io/en/latest/installation/linux.html#font-installation)
 
 Installation Windows:
 
