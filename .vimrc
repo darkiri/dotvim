@@ -90,7 +90,7 @@ endif
 syntax on
 if !has("win32") || has("gui_running")
     set background=dark
-    colorscheme hybrid
+    colorscheme jellybeans
 endif
 
 set number
