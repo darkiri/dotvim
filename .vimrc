@@ -15,6 +15,7 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'
 Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -126,9 +127,9 @@ set mousehide
 set nowrap
 
 set expandtab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 autocmd FileType make setlocal noexpandtab
 autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
@@ -168,3 +169,5 @@ autocmd BufWritePre *.{h,cpp} :%s/\s\+$//e
 autocmd bufwritepost .vimrc source $MYVIMRC
 autocmd bufwritepost _vimrc source $MYVIMRC
 
+let g:netrw_altv=1
+let g:NERDTreeWinPos = "left"
