@@ -30,6 +30,7 @@ Plugin 'Valloric/ListToggle'
 
 Plugin 'chriskempson/base16-vim'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'w0ng/vim-hybrid'
 
 if !has("win32")
@@ -88,9 +89,12 @@ if has("gui_running")
 endif
 
 syntax on
+"if !has("gui_running")
+    "let g:solarized_termcolors=256
+"endif
 if !has("win32") || has("gui_running")
     set background=dark
-    colorscheme jellybeans
+    colorscheme solarized
 endif
 
 set number
