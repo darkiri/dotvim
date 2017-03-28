@@ -16,6 +16,7 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -175,3 +176,4 @@ autocmd bufwritepost _vimrc source $MYVIMRC
 
 let g:netrw_altv=1
 let g:NERDTreeWinPos = "left"
+let g:nerdtree_tabs_open_on_console_startup=2
