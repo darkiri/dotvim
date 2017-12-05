@@ -33,6 +33,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'w0ng/vim-hybrid'
+Plugin 'machakann/vim-highlightedyank'
 
 if !has("win32")
     Plugin 'Valloric/YouCompleteMe'
@@ -177,3 +178,7 @@ autocmd bufwritepost _vimrc source $MYVIMRC
 let g:netrw_altv=1
 let g:NERDTreeWinPos = "left"
 let g:nerdtree_tabs_open_on_console_startup=2
+
+set termguicolors
+
+map y <Plug>(highlightedyank)
